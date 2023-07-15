@@ -1,70 +1,107 @@
+/* @font-face {
+    font-family: 'Inconsolata'; 
+    src: url('fonts/Inconsolata-SemiBold.ttf') format('truetype');
+  }
+*/
+
+  
 body {
-    background: linear-gradient(146deg, #00C72B 0%, #006B17 51.77%, #051408 100%, #04200A 100%);
+    background: linear-gradient(146deg,
+            #00c72b 0%,
+            #006b17 51.77%,
+            #051408 100%,
+            #04200a 100%);
 }
 
 #header {
     display: flex;
-    /* width: 1430px;
-    height: 217px; */
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
 
     color: rgba(145, 246, 30, 0.88);
     text-align: center;
-    font-family: Inconsolata;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: 'Inconsolata';
 }
 
 .main {
     display: flex;
-    gap: 10px;
+    gap: 6px;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
+    
 
-
+    max-width: 600px;
+    margin: auto;
+    /* background-color: #04200a; */
 }
+
 .box {
+    display: flex;
     background: rgba(0, 0, 0, 0.38);
     color: aliceblue;
     padding: 10px;
-}
-
-.field {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
+    max-width: 600px;
+    gap: 20px;
+    /* width: fit-content; */
     /* background-color: red; */
 }
 
+.field {
+    align-items: center;
+    
+    /* justify-content: center;  */
+    /* background-color: red; */
+}
+
+.area {
+    display: flex;
+    height: 130px;
+   
+}
+
 input {
-    background-color: transparent;  border: none;
-    border-bottom: 1.5px solid whitesmoke;
-    outline: none; 
     background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid whitesmoke;
+    outline: none;
+    flex-grow: 1;
+    /* background-color: transparent; */
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: 'Expletus Sans';
 }
 
 textarea {
-    background-color: rgba(0, 0, 0, 0.4);;  
+    background-color: rgba(0, 0, 0, 0.4);
     border: none;
     outline: none;
+    width: auto;
+    flex-grow: 1;
+    color: whitesmoke;
 }
 
 .from {
     height: 20px;
 }
+
 .to {
     height: 20px;
 }
-.body {
-    height: 130px;
-}
 
 .submit {
-    width: 35px;
+    width: 45px;
 }
+
+p {
+    width: 40px;
+    font-size: 18px;
+    font-family: 'Expletus Sans';
+}
+
+/* .button {
+    height: 10px;
+} */
