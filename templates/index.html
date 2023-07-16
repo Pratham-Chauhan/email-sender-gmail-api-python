@@ -1,40 +1,41 @@
 <html>
-  <head>
-    <title>Home</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <div id="header">
-      <h1>Email Sender</h1>
-    </div>
+<head>
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./styles.css" /> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
 
+<body>
+  <div id="header">
+    <h1>Email Sender</h1>
+  </div>
+
+  <form action="/send" method="post">
     <div class="main">
       <div class="box field from">
         <p>From:</p>
-        <input type="text" value="prathamchauhan.coding42@gmail.com"/>
+        <input type="email" name="from" value="prathamchauhan.coding42@gmail.com" />
       </div>
 
       <div class="box field to">
         <p>To:</p>
-        <input type="text" />
+        <input type="email" name="to" />
       </div>
 
       <div class="box area">
         <p>Body:</p>
-        <textarea></textarea>
+        <textarea name="message"></textarea>
       </div>
       <div class="submit box">
-        <div class="button"><p>Send</p></div>
+        <button type="submit" class="button">
+          <p>Send</p>
+        </button>
       </div>
     </div>
-  </body>
+  </form>
+</body>
+
 </html>

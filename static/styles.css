@@ -48,6 +48,8 @@ body {
     gap: 20px;
     /* width: fit-content; */
     /* background-color: red; */
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .field {
@@ -69,7 +71,7 @@ input {
     border-bottom: 1.5px solid whitesmoke;
     outline: none;
     flex-grow: 1;
-    /* background-color: transparent; */
+    /* background-color: red; */
     color: whitesmoke;
     font-size: 18px;
     font-family: 'Expletus Sans';
@@ -100,8 +102,12 @@ p {
     width: 40px;
     font-size: 18px;
     font-family: 'Expletus Sans';
+    /* background-color: red; */
 }
 
-/* .button {
-    height: 10px;
-} */
+.button {
+    background-color: transparent;
+    
+    border: none;
+    color: whitesmoke;
+}
